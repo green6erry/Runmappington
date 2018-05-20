@@ -111,6 +111,12 @@
                                 <action selector="doneTapped:" destination="acS-OB-yNa" id="UE1-YM-CIl"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="12g-lB-A41">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="Y20-gJ-tQc" kind="show" id="VNU-gD-qHY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bXw-O5-hOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -207,33 +213,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="run-background" translatesAutoresizingMaskIntoConstraints="NO" id="TrU-hh-818">
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-b9-MPp">
-                                <rect key="frame" x="210" y="559" width="125" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W23-d7-7ag">
+                                <rect key="frame" x="125" y="572" width="125" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <state key="normal" title="   FORGET  " backgroundImage="button-rectangle-pink-normal">
+                                <state key="normal" title="   CLOSE  " backgroundImage="button-rectangle-pink-normal">
                                     <color key="titleColor" red="0.96862745100000003" green="0.29803921570000003" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <state key="highlighted" title="   FORGET   " backgroundImage="button-rectangle-pink-highlight">
+                                <state key="highlighted" title="   CLOSE   " backgroundImage="button-rectangle-pink-highlight">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="forgetTapped:" destination="2d9-vf-ScU" eventType="touchUpInside" id="eVa-3S-9fC"/>
+                                    <action selector="closeTapped:" destination="2d9-vf-ScU" eventType="touchUpInside" id="6wF-M8-wc4"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W23-d7-7ag">
-                                <rect key="frame" x="45" y="559" width="125" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <state key="normal" title="   SAVE  " backgroundImage="button-rectangle-pink-normal">
-                                    <color key="titleColor" red="0.96862745100000003" green="0.29803921570000003" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <state key="highlighted" title="   SAVE   " backgroundImage="button-rectangle-pink-highlight">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="TrU-hh-818" firstAttribute="leading" secondItem="iyC-dg-4m2" secondAttribute="leading" id="BJW-WX-37i"/>
                             <constraint firstItem="TrU-hh-818" firstAttribute="bottom" secondItem="iyC-dg-4m2" secondAttribute="bottom" id="Hgo-hd-caT"/>
@@ -282,9 +278,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="xiC-T8-VuR">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.96862745100000003" green="0.29803921570000003" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -308,4 +306,7 @@
         <image name="options-background" width="240" height="430"/>
         <image name="run-background" width="240" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VNU-gD-qHY"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -18,6 +18,7 @@
 		07C6495520B0D3C10082AEFC /* RunListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C6495420B0D3C10082AEFC /* RunListViewController.swift */; };
 		07C6495720B0D3D40082AEFC /* RunDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C6495620B0D3D40082AEFC /* RunDetailViewController.swift */; };
 		07C6495920B0D3EC0082AEFC /* RunNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C6495820B0D3EC0082AEFC /* RunNewViewController.swift */; };
+		07C6495B20B105510082AEFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07C6495A20B105500082AEFC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		07C6495420B0D3C10082AEFC /* RunListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunListViewController.swift; sourceTree = "<group>"; };
 		07C6495620B0D3D40082AEFC /* RunDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunDetailViewController.swift; sourceTree = "<group>"; };
 		07C6495820B0D3EC0082AEFC /* RunNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunNewViewController.swift; sourceTree = "<group>"; };
+		07C6495A20B105500082AEFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				07C6495320B0CED40082AEFC /* Models */,
 				07C6495120B0CEB40082AEFC /* Resources */,
 				07C6494320B0C9660082AEFC /* Info.plist */,
+				07C6495A20B105500082AEFC /* GoogleService-Info.plist */,
 			);
 			path = Runmappington;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				07C6495020B0CEA20082AEFC /* run1.json in Resources */,
 				07C6494F20B0CEA20082AEFC /* run.json in Resources */,
 				07C6493D20B0C9650082AEFC /* Main.storyboard in Resources */,
+				07C6495B20B105510082AEFC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

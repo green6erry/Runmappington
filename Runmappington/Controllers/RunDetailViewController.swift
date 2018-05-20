@@ -10,9 +10,7 @@ import UIKit
 
 class RunDetailViewController: UIViewController {
 
-    @IBAction func forgetTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +20,21 @@ class RunDetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func closeTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "Run Options", message: "Would you like to save this run?", preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let delete = UIAlertAction(title: "Forget", style: .destructive)  { (UIAlertAction) in
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        let save = UIAlertAction(title: "Save", style: .default, handler: nil)
+        
+        alert.addAction(cancel)
+        alert.addAction(delete)
+        alert.addAction(save)
+        present(alert, animated: true, completion: nil)
     }
     
 
